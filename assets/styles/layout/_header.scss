@@ -1,0 +1,44 @@
+header {
+  height: 100vh;
+
+  .hero-container {
+    height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .main-hero {
+        height: 100%;
+      display: flex;
+      justify-content: center;
+      text-align: left;
+      flex-direction: column;
+
+      h1 {
+        font-size: 4rem;
+      }
+
+      h2 {
+        width: 40%;
+      }
+    }
+
+    .cta-hero {
+        align-self: flex-end;
+        width: 10%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+
+      img {
+        padding-top: 5px;
+        width: 15px;
+      }
+    }
+  }
+}

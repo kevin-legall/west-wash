@@ -1,0 +1,17 @@
+// layouts //
+@import "./settings";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/blog";
+@import "./layout/legal";
+@import "./layout/section";
+@import "./layout/about";
+@import "./layout/contact";
+@import "./layout/prestations";
+
+// components //
+@import "../styles/components/buttons";
+@import "../styles/components/navbar";
+@import "../styles/components/cards";
+@import "../styles/components/carousel";
+@import "../styles/components/video";

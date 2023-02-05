@@ -1,0 +1,102 @@
+nav {
+  
+  .main-btn {
+    color: $blue;
+    box-shadow: 5px $black;
+    text-decoration: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 3px solid $blue;
+    border-radius: 5px;
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+  
+    p {
+      position: relative;
+      transition: all 400ms ease;
+      font-family: $regularfont;
+    }
+  
+    .anim-btn {
+      height: 100%;
+      overflow: hidden;
+      filter: url(#goo);
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: -3px;
+      right: -1px;
+      z-index: 1;
+  
+      div {
+        background: $blue;
+        width: 39%;
+        height: 100%;
+        z-index: -1;
+        border-radius: 100%;
+        position: absolute;
+        transform: scale(1.4) translateY(125%) translateZ(0);
+        transition: all 700ms ease;
+  
+        &:nth-child(1) {
+          left: -5%;
+        }
+        &:nth-child(2) {
+          left: 30%;
+          transition-delay: 60ms;
+        }
+        &:nth-child(3) {
+          left: 60%;
+          transition-delay: 25ms;
+        }
+      }
+    }
+    &:hover {
+      color: white;
+  
+      p {
+        z-index: 4;
+      }
+  
+      .anim-btn {
+  
+        div {
+          transform: scale(1.4) translateY(0) translateZ(0);
+        }
+      }
+    }
+  }
+
+  a:not(.main-btn) {
+    text-decoration: none;
+    color: $black;
+
+    &:hover {
+      color: $yellow;
+    }
+  }
+}
+
+header {
+
+  a {
+    text-decoration: none;
+    color: $black;
+  }
+}
+
+.primary-btn {
+  background: $yellow;
+  border: 1px solid $yellow;
+  color: #F1F1F1;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+
+  &:hover {
+    background: #eeb50a;
+    border: 1px solid #eeb50a;
+  }
+}
